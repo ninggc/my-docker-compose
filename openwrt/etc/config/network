@@ -1,0 +1,15 @@
+config interface 'lan'
+        #option type 'bridge'
+        option ifname 'eth0'
+        option proto 'static'
+        # 分配给openwrt系统的IP地址
+        option ipaddr '192.168.71.171'
+        # 子网掩码
+        option netmask '255.255.255.0'
+        # 主路由的网关
+        option gateway '192.168.71.1'
+        # DNS
+        option dns '114.114.114.114'
+        # 广播地址
+        option broadcast '192.168.71.255'
+        #option ip6assign '60'
